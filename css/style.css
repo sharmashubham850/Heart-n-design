@@ -1,0 +1,162 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Nunito;
+    color:white;
+}
+
+.logo {
+    width: 160px;
+}
+
+#top{
+    background-image: url('../img/home/Group\ 56.png');
+    background: transparent linear-gradient(90deg, #10A1BB 0%, #19B580 100%) 0% 0% no-repeat padding-box;
+    height: 780px;
+    padding: 10px 30px;
+    /* opacity: 0.6; */
+
+}
+
+nav {
+    padding: 20px 50px 20px 63px;
+}
+
+.country {
+    display: inline-block;
+    position:absolute;
+    top:34px;
+    right:100px;
+    background: white;
+    border-radius: 12px;
+    padding: 6px 10px;
+}
+
+span.lang{
+    color:#F48120;
+    padding: 5px;
+    font-family: Nunito;
+}
+
+.headline{
+    margin: 200px 219px 80px 20px;
+    padding: 33px 117px 80px 50px;
+    width: 500px;
+}
+
+.title {
+    color: white;
+    font-family: Nunito;
+    font-size: 2.5rem;
+    line-height: 1;
+    margin-bottom: -4.5px;
+}
+
+.subtitle {
+    margin: 25px 0;
+    color: #E6E7E8;
+    font-family: Nunito;
+}
+
+button {
+    color: grey;
+    background: #F48120;
+    border-radius: 10px;
+    border-width: 0;
+    margin: 5px 0;
+    padding: 14px 45px;
+    font-size: 1.2rem;
+    opacity: 1;
+}
+
+span {
+    text-align: center;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+/* Middle section */
+#middle{
+    display:flex;
+}
+
+.middle-left,.middle-right{
+    padding: 80px 280px 0px 70px;
+    
+}
+
+.vision {
+    margin-bottom:15px;
+    color:white;
+    font-size:2.2rem;
+    line-height: 1.1;
+
+}
+
+.subvision{
+    width:100px;
+}
+
+.middle-left{
+    background: transparent linear-gradient(240deg, #F48120 0%, #CE4890 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.examples-container{
+    display:flex;
+}
+
+div.example{
+    flex-basis: center;
+    margin:30px;
+}
+
+#example-head,p{
+    color:#19B580;
+}
+
+
+
+/* Quote section */
+#quote{
+    /* width: 1920px; */
+    height: 567px;
+    background: transparent linear-gradient(240deg, #10A1BB 0%, #19B580 100%) 0% 0% no-repeat padding-box;
+    opacity: 0.85;
+}
+
+/* Working section */
+#working{
+    /* width: 1920px; */
+    height: 600px;
+    background: transparent linear-gradient(240deg, #F48120 0%, #CE4890 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+/* Join section */
+#join{
+    /* width: 1920px; */
+    height: 602px;
+    background: transparent linear-gradient(240deg, #10A1BB 0%, #19B580 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+/* Footer section */
+#footer{
+    /* width: 1920px; */
+    height: 70px;
+    background: transparent linear-gradient(0deg, #10A1BB 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+    opacity: 0.5;
+}
+/* 
+.footer-logo{
+    float:left;
+} */
+
+.footer-content{
+    text-align: center;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
