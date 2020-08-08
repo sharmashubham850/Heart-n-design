@@ -3,6 +3,7 @@
     padding:0;
     font-family: Nunito;
     color:white;
+    box-sizing: border-box;
 }
 
 .logo {
@@ -39,9 +40,9 @@ span.lang{
 }
 
 .headline{
-    margin: 200px 219px 80px 20px;
-    padding: 33px 117px 80px 50px;
-    width: 500px;
+    margin: 200px 19px 80px 20px;
+    padding: 33px 17px 80px 50px;
+    max-width: 600px;
 }
 
 .title {
@@ -65,7 +66,8 @@ button {
     border-width: 0;
     margin: 5px 0;
     padding: 14px 45px;
-    font-size: 1.2rem;
+    font-weight: 600;
+    font-size:1.3rem;
     opacity: 1;
 }
 
@@ -83,13 +85,14 @@ span {
 
 .middle-left,.middle-right{
     padding: 80px 280px 0px 70px;
-    
+    flex-basis: auto;
+
 }
 
 .vision {
     margin-bottom:15px;
     color:white;
-    font-size:2.2rem;
+    font-size:2.5rem;
     line-height: 1.1;
 
 }
@@ -116,14 +119,78 @@ div.example{
     color:#19B580;
 }
 
+/* Goals section */
+.support{
+    text-align: center;
+    line-height: 0.5rem;
+}
+
+.support img{
+    width:45%;
+}
+
+.support p {
+    color:#A6A8AB;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size:1.4rem;
+}
+
+.support-images{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.support-img{
+    border: 0.2px solid rgb(243, 243, 243);
+    padding:20px;
+    flex-basis:16.664%;
+}
+
+.view-all{
+    color: #10A1BB;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    font-size:1.8vw;
+}
 
 
 /* Quote section */
-#quote{
-    /* width: 1920px; */
-    height: 567px;
+#quote-section{
     background: transparent linear-gradient(240deg, #10A1BB 0%, #19B580 100%) 0% 0% no-repeat padding-box;
-    opacity: 0.85;
+    padding:50px 120px 60px 120px;
+    text-align: center;
+}
+
+p q{
+    font-weight: 600;
+    font-size: 2.9rem;
+    max-width: 700px;
+}
+
+.circular{
+    min-width: 150px;
+    max-width:14%;
+    margin:20px 0 10px;
+    border:10px solid black;
+    border-radius: 100%;
+}
+
+.name{
+    color:white;
+    font-weight: 600;
+    font-size:1.5rem;
+}
+
+.position{
+    margin:2px 0 20px;
+    color:rgb(221, 216, 216);
+    font-size:1.3rem;
+}
+
+#quote-section button{
+    padding:15px 30px;
 }
 
 /* Working section */
