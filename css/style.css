@@ -79,45 +79,69 @@ span {
 }
 
 /* Middle section */
+
 #middle{
     display:flex;
 }
 
-.middle-left,.middle-right{
-    padding: 80px 280px 0px 70px;
-    flex-basis: auto;
-
+.middle-left{
+    max-width: 50%;
+    background: transparent linear-gradient(240deg, #F48120 0%, #CE4890 100%);
+    padding: 60px 28px 60px 70px;
+    border:1px solid black;
+    font-weight: normal;
 }
+
+.middle-right{
+    max-width: 50%;
+    padding: 60px 28px 60px 70px;
+    border:1px solid black;
+    text-align: center;
+}
+
 
 .vision {
     margin-bottom:15px;
     color:white;
-    font-size:2.5rem;
+    font-size:2.6rem;
     line-height: 1.1;
 
 }
 
-.subvision{
-    width:100px;
+.sub-vision{
+    color:rgb(243, 237, 237);
+    font-weight: normal;
+    font-size:1.4rem;
 }
 
-.middle-left{
-    background: transparent linear-gradient(240deg, #F48120 0%, #CE4890 100%) 0% 0% no-repeat padding-box;
-    opacity: 1;
+#example-head{
+    color:#10A1BB;
+}
+
+#example-head span{
+    margin-top:8px;
+    display:block;
+    color: #19B580;
 }
 
 .examples-container{
     display:flex;
+    margin: 30px 0 0px 0;
 }
 
 div.example{
     flex-basis: center;
-    margin:30px;
+    margin:auto 5%;
 }
 
-#example-head{
+div.example img{
+    width: 35px;
+}
+
+div.example p{
     color:#19B580;
 }
+
 
 /* Goals section */
 .support{
@@ -126,6 +150,7 @@ div.example{
 }
 
 .support img{
+    margin:10px auto;
     width:45%;
 }
 
@@ -161,7 +186,7 @@ div.example{
 /* Quote section */
 #quote-section{
     background: transparent linear-gradient(240deg, #10A1BB 0%, #19B580 100%) 0% 0% no-repeat padding-box;
-    padding:50px 120px 60px 120px;
+    padding:50px 10%;
     text-align: center;
 }
 
@@ -198,36 +223,51 @@ p q{
 /* Working section */
 #working{
     /* width: 1920px; */
-    height: 600px;
     background: transparent linear-gradient(240deg, #F48120 0%, #CE4890 100%) 0% 0% no-repeat padding-box;
-    opacity: 1;
     padding:50px 40px;
+    overflow-x: auto;
 }
 
-.step{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin:30px auto;
+#working>p{
+    font-weight:bold;
+    font-size:1.5rem;
 }
 
-.step .what{
+
+tr:nth-child(n+2){
+    opacity: 0.5;
+}
+
+.what{
     font-weight: 600;
     font-size: 3rem;
 }
 
 
-.step .how img{
+.how img{
     width:25px;
     margin: 5px 10px 2px 0;
     vertical-align: middle;
 }
 
-.step span.short{
+span.short{
     font-weight: 600;
     font-size:1.2rem;
 }
+
+.step>*{
+    margin: 10px 0;
+}
+
+th{
+    text-align: left;
+    padding:20px 60px 20px 0;
+}
+
+td{
+    padding-left:40px;
+}
+
 
 
 /* Join section */
@@ -268,10 +308,9 @@ p q{
 
 }
 
-.col-right{
-    width: 50%;
+.col-right img{
+    width: 90%;
     height:auto;
-    margin-right: 60px;
 
 }
 
