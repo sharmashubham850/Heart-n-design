@@ -1,8 +1,8 @@
 *{
     margin:0;
     padding:0;
-    font-family: Nunito;
     color:white;
+    font-family: Nunito, sans-serif;
     box-sizing: border-box;
 }
 
@@ -60,7 +60,7 @@ span.lang{
 }
 
 button {
-    color: grey;
+    color: white;
     background: #F48120;
     border-radius: 10px;
     border-width: 0;
@@ -115,7 +115,7 @@ div.example{
     margin:30px;
 }
 
-#example-head,p{
+#example-head{
     color:#19B580;
 }
 
@@ -145,7 +145,9 @@ div.example{
     border: 0.2px solid rgb(243, 243, 243);
     padding:20px;
     flex-basis:16.664%;
+    width:16.664%;
 }
+
 
 .view-all{
     color: #10A1BB;
@@ -199,31 +201,95 @@ p q{
     height: 600px;
     background: transparent linear-gradient(240deg, #F48120 0%, #CE4890 100%) 0% 0% no-repeat padding-box;
     opacity: 1;
+    padding:50px 40px;
 }
 
+.step{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin:30px auto;
+}
+
+.step .what{
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+
+.step .how img{
+    width:25px;
+    margin: 5px 10px 2px 0;
+    vertical-align: middle;
+}
+
+.step span.short{
+    font-weight: 600;
+    font-size:1.2rem;
+}
+
+
 /* Join section */
-#join{
+#join-section{
     /* width: 1920px; */
-    height: 602px;
     background: transparent linear-gradient(240deg, #10A1BB 0%, #19B580 100%) 0% 0% no-repeat padding-box;
     opacity: 1;
+    padding: 50px 40px;
+}
+
+#join-section .row{
+    display:flex;
+    justify-content: space-between;
+}
+
+.col-left{
+    max-width: 400px;
+}
+
+.col-left>*{
+    margin:20px 0;
+}
+
+.col-left h5{
+    font-weight: 400;
+    font-size: 2.2rem;
+    margin-top:0;
+}
+
+.col-left button{
+    margin-top: 10px;
+}
+
+.col-left img{
+    width: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+
+}
+
+.col-right{
+    width: 50%;
+    height:auto;
+    margin-right: 60px;
+
 }
 
 /* Footer section */
 #footer{
     /* width: 1920px; */
-    height: 70px;
     background: transparent linear-gradient(0deg, #10A1BB 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
-    opacity: 0.5;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    flex-grow: 5;
+    
 }
-/* 
-.footer-logo{
-    float:left;
-} */
 
-.footer-content{
-    text-align: center;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
+footer img{
+    vertical-align: middle;
+}
+
+footer span{
+    flex-basis: 73%;
 }
