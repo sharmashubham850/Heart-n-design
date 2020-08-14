@@ -11,11 +11,23 @@
 }
 
 #top{
-    background-image: url('../img/home/Group\ 56.png');
-    background: transparent linear-gradient(90deg, #10A1BB 0%, #19B580 100%);
+    position: relative;
+    background: url('../img/home/Group\ 56.png') center no-repeat;
+    background-size: cover;
     padding: 1% 4%;
-    /* opacity: 0.6; */
+}
 
+.color-overlay{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top:0;
+    left:0;
+}
+
+.bg-gradient{
+    background: transparent linear-gradient(90deg, #10A1BB 0%, #19B580 100%);
+    opacity: 0.6;
 }
 
 header{
@@ -27,8 +39,8 @@ header{
 .country {
     display: inline-block;
     position:absolute;
-    top:15%;
-    right:10%;
+    top:23%;
+    right:3%;
     background: white;
     border-radius: 12px;
     padding: 6px 10px;
@@ -36,13 +48,15 @@ header{
 
 span.lang{
     color:#F48120;
-    padding: 5px;
-    font-family: Nunito;
+    margin-left: 5px;
 }
 
-button.select-lang{
+a.select-lang{
     background: white;
-    border: none;
+}
+
+a.select-lang img{
+    height:10px;
 }
 
 button.select-lang:hover{
@@ -54,11 +68,11 @@ button.select-lang:hover{
     margin: 12% 15% 9% 0;
     padding: 4% 2%;
     max-width: 600px;
+    position: inherit;
 }
 
 .title {
     color: white;
-    font-family: Nunito;
     font-size: 2.5rem;
     line-height: 1;
     margin-bottom: -4.5px;
@@ -67,7 +81,7 @@ button.select-lang:hover{
 .subtitle {
     margin: 25px 0;
     color: #E6E7E8;
-    font-family: Nunito;
+    font-weight: 400;
 }
 
 button.submit {
@@ -87,6 +101,13 @@ span {
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
+}
+
+img.down-arrow{
+    width:2.5%;
+    position: absolute;
+    left:49%;
+    bottom:6px;
 }
 
 /* Middle section */
@@ -126,6 +147,7 @@ span {
 
 #example-head{
     color:#10A1BB;
+    font-size: 1.4rem;
 }
 
 #example-head span{
@@ -141,14 +163,15 @@ span {
 
 div.example{
     flex-basis: center;
-    margin:auto 5%;
+    margin:auto 4%;
 }
 
 div.example img{
-    width: 35px;
+    width: 45px;
 }
 
 div.example p{
+    font-size: 1.15rem;
     color:#19B580;
 }
 
@@ -204,9 +227,20 @@ div.example p{
 
 /* Quote section */
 #quote-section{
-    background: transparent linear-gradient(240deg, #10A1BB 0%, #19B580 100%) 0% 0% no-repeat padding-box;
+    background: url('../img/home/Group\ 58.png') center no-repeat;
+    background-size: cover;
     padding:4% 6%;
     text-align: center;
+    position: relative;
+}
+
+.bg-gradient2{
+    background: transparent linear-gradient(240deg, #10A1BB 0%, #19B580 100%) 0% 0% no-repeat padding-box;
+    opacity: 0.85;
+}
+
+#quote-section .container{
+    position: relative;
 }
 
 p q{
